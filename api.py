@@ -1,6 +1,7 @@
 from flask import Flask
 from flask_restful import reqparse, abort, Api, Resource
-import os
+import os, json
+import apiHelper
 
 app = Flask(__name__)
 api = Api(app)
@@ -48,7 +49,8 @@ class Regions(Resource):
         #Accepts a procedure and returns the price range per region for that operation
         args = parser.parse_args()
         op = args['operation']
-        return op
+        regions = apiHelper.operationToRegions(op)
+        return regions
 
     def post(self):
         args = parser.parse_args()

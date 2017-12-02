@@ -11,6 +11,7 @@ caribbeanDestinations = {'Puerto Rico': ['BQN', 'PSE', 'SJU'], 'Antigua and Barb
                   'Jamaica': ['KIN', 'MBJ'], 'Haiti': ['PAP'], 'Trinidad & Tobago': ['POS'],
                   'Turks and Caicos Islands': ['PLS'], 'St. Croix': ['STX'], 'St. Lucia': ['UVF'],
                   'St. Maarten': ['SXM'], 'St. Thomas': ['STT']}
+regions = {'CA': centralAmericaDestinations, 'SA': southAmericaDestinations, 'CB': caribbeanDestinations}
 
 def readProcedurePrices():
     with open('operations.json') as fp:
@@ -25,12 +26,37 @@ def formatCurrency(currencyStr):
 
 def main():
     operation = getargs()
+    generateMinMaxPriceByRegion(operation)
     # fares = readDataSetFile('./data/LowestFares.csv')
     # destinations = {**centralAmericaDestinations, **southAmericaDestinations, **caribbeanDestinations}
     destinations = getCheapestDestination(operation)
+    json.dump(fp=open(operation+'.json','w'), obj={'operation': operation,'min': destinations[0],'max': destinations[-1]}, indent=4)
     flights = generateDestinations(destinations,operation)
-    printDestinations(flights,operation)
+    printDestinations(flights, operation)
     # print(destination)
+
+def generateMinMaxPriceByRegion(procedure):
+    # deals = readDataSetFile('./data/Deals.csv')
+    output = {}
+    for regionName, region in regions.items():
+        regionOutput = {}
+        for country in region:
+            destinationAirports = countryToAirports(country)
+            for airport in destinationAirports:
+                countryCost = medicalProcedures[procedure][airport]
+                flightPrices = findFlightPrices('JFK',destinationAirports)
+                if flightPrices:
+                    # print(flightPrices)
+                    flightMin = flightPrices[0][7]
+                    flightMax = flightPrices[-1][7]
+                    if country in regionOutput:
+                        regionOutput[country][airport] = {'flightMin': flightMin,'flightMax': flightMax, 'operationCost':countryCost}
+                    else:
+                        regionOutput[country] = {airport:{'flightMin': flightMin,'flightMax': flightMax, 'operationCost':countryCost}}
+        output[regionName] = regionOutput
+    json.dump(fp=open('minmax.json','w'), obj=output, indent=4)
+    return output
+
 
 def findFlightPrices(origin,destinationAirports):
     if not destinationAirports:
