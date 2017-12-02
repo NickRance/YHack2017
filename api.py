@@ -61,10 +61,10 @@ class Regions(Resource):
 ## Actually setup the Api resource routing here
 ##
 api.add_resource(Regions, '/regions')
-api.add_resource(TodoList, '/countries')
-api.add_resource(TodoList, '/country')
-api.add_resource(Todo, '/todos/<todo_id>')
+# api.add_resource(TodoList, '/countries')
+# api.add_resource(TodoList, '/country')
+# api.add_resource(Todo, '/todos/<todo_id>')
 
 
 if __name__ == '__main__':
-    app.run(debug=True,  host = os.getenv("IP","0.0.0.0"),port = int (os.getenv('PORT', 33507)))
+    app.run(debug=True,  host = os.getenv("IP","0.0.0.0"),port = int (os.getenv('PORT', 1234)))
