@@ -1,0 +1,218 @@
+{
+    "CA": {
+        "Mexico": {
+            "CUN": {
+                "flightMin": "138.82",
+                "flightMax": "208.82",
+                "operationCost": "27000.00"
+            },
+            "MEX": {
+                "flightMin": "138.82",
+                "flightMax": "208.82",
+                "operationCost": "27000.00"
+            }
+        },
+        "Costa Rica": {
+            "SJO": {
+                "flightMin": "163.79",
+                "flightMax": "293.79",
+                "operationCost": "27000.00"
+            },
+            "LIR": {
+                "flightMin": "163.79",
+                "flightMax": "293.79",
+                "operationCost": "27000.00"
+            }
+        }
+    },
+    "SA": {
+        "Colombia": {
+            "BOG": {
+                "flightMin": "165.10",
+                "flightMax": "250.10",
+                "operationCost": "14800.00"
+            },
+            "CTG": {
+                "flightMin": "165.10",
+                "flightMax": "250.10",
+                "operationCost": "14800.00"
+            },
+            "MDE": {
+                "flightMin": "165.10",
+                "flightMax": "250.10",
+                "operationCost": "14800.00"
+            }
+        }
+    },
+    "CB": {
+        "Puerto Rico": {
+            "BQN": {
+                "flightMin": "112.10",
+                "flightMax": "193.10",
+                "operationCost": "21292.71"
+            },
+            "PSE": {
+                "flightMin": "112.10",
+                "flightMax": "193.10",
+                "operationCost": "15226.41"
+            },
+            "SJU": {
+                "flightMin": "112.10",
+                "flightMax": "193.10",
+                "operationCost": "11016.81"
+            }
+        },
+        "Antigua and Barbuda": {
+            "ANU": {
+                "flightMin": "145.60",
+                "flightMax": "220.60",
+                "operationCost": "53369.48"
+            }
+        },
+        "Aruba": {
+            "AUA": {
+                "flightMin": "176.10",
+                "flightMax": "278.10",
+                "operationCost": "17566.27"
+            }
+        },
+        "Bahamas": {
+            "NAS": {
+                "flightMin": "118.10",
+                "flightMax": "183.10",
+                "operationCost": "22437.00"
+            }
+        },
+        "Bermuda": {
+            "BDA": {
+                "flightMin": "128.10",
+                "flightMax": "98.10",
+                "operationCost": "17566.27"
+            }
+        },
+        "Barbados": {
+            "BGI": {
+                "flightMin": "129.60",
+                "flightMax": "234.60",
+                "operationCost": "66576.15"
+            }
+        },
+        "Cuba": {
+            "CMW": {
+                "flightMin": "143.10",
+                "flightMax": "188.10",
+                "operationCost": "22644.00"
+            },
+            "HAV": {
+                "flightMin": "143.10",
+                "flightMax": "188.10",
+                "operationCost": "22644.00"
+            },
+            "HOG": {
+                "flightMin": "143.10",
+                "flightMax": "188.10",
+                "operationCost": "22644.00"
+            },
+            "SNU": {
+                "flightMin": "143.10",
+                "flightMax": "188.10",
+                "operationCost": "22728.36"
+            }
+        },
+        "Curacao": {
+            "CUR": {
+                "flightMin": "131.10",
+                "flightMax": "246.10",
+                "operationCost": "17566.27"
+            }
+        },
+        "Cayman Islands": {
+            "GCM": {
+                "flightMin": "117.10",
+                "flightMax": "187.10",
+                "operationCost": "14370.96"
+            }
+        },
+        "Dominican Republic": {
+            "LRM": {
+                "flightMin": "162.40",
+                "flightMax": "284.40",
+                "operationCost": "17566.27"
+            },
+            "POP": {
+                "flightMin": "162.40",
+                "flightMax": "284.40",
+                "operationCost": "17566.27"
+            },
+            "PUJ": {
+                "flightMin": "162.40",
+                "flightMax": "284.40",
+                "operationCost": "17566.27"
+            },
+            "STI": {
+                "flightMin": "162.40",
+                "flightMax": "284.40",
+                "operationCost": "17566.27"
+            },
+            "SDQ": {
+                "flightMin": "162.40",
+                "flightMax": "284.40",
+                "operationCost": "17566.27"
+            }
+        },
+        "Grenada": {
+            "GND": {
+                "flightMin": "156.00",
+                "flightMax": "234.00",
+                "operationCost": "12454.20"
+            }
+        },
+        "Jamaica": {
+            "KIN": {
+                "flightMin": "187.10",
+                "flightMax": "302.10",
+                "operationCost": "16054.60"
+            },
+            "MBJ": {
+                "flightMin": "187.10",
+                "flightMax": "302.10",
+                "operationCost": "16054.60"
+            }
+        },
+        "Haiti": {
+            "PAP": {
+                "flightMin": "148.60",
+                "flightMax": "215.60",
+                "operationCost": "30331.50"
+            }
+        },
+        "Trinidad & Tobago": {
+            "POS": {
+                "flightMin": "158.10",
+                "flightMax": "259.10",
+                "operationCost": "23816.34"
+            }
+        },
+        "Turks and Caicos Islands": {
+            "PLS": {
+                "flightMin": "108.10",
+                "flightMax": "201.10",
+                "operationCost": "17566.27"
+            }
+        },
+        "St. Lucia": {
+            "UVF": {
+                "flightMin": "173.50",
+                "flightMax": "269.50",
+                "operationCost": "19453.23"
+            }
+        },
+        "St. Maarten": {
+            "SXM": {
+                "flightMin": "163.10",
+                "flightMax": "242.10",
+                "operationCost": "19453.23"
+            }
+        }
+    }
+}

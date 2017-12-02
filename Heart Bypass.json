@@ -1,0 +1,11 @@
+{
+    "operation": "Heart Bypass",
+    "min": [
+        "SJU",
+        "11016.81"
+    ],
+    "max": [
+        "BOS",
+        "123000.00"
+    ]
+}
